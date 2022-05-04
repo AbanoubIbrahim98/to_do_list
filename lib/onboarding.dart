@@ -61,25 +61,13 @@ class _OnboardingState extends State<Onboarding> {
               ),
               Expanded(
                 flex: 1,
-                child: RaisedButton(
+                child: ElevatedButton(
                   onPressed: () {
-                    // HERO-ANIMATION: https://github.com/flutter/flutter/issues/28041
-                    // Navigator.of(context).pushReplacement(
-                    //   PageRouteBuilder(
-                    //     transitionDuration: Duration(seconds: 1),
-                    //     pageBuilder: (_, __, ___) => Empty(),
-                    //   ),
-                    // );
                     Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(builder: (context) => Empty()),
                     );
                   },
-                  textColor: Colors.white,
-                  padding: const EdgeInsets.all(0.0),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
                   child: Container(
                     width: MediaQuery.of(context).size.width / 1.4,
                     height: 60,

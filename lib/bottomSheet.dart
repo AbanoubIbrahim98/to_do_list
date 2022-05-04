@@ -246,16 +246,11 @@ class Modal {
                             ),
                           ),
                           SizedBox(height: 10),
-                          RaisedButton(
+                          ElevatedButton(
                             onPressed: () {
                               subTasks.add('New subtask');
                               //print(subTasks.toString());
                             },
-                            textColor: Colors.white,
-                            padding: const EdgeInsets.all(0.0),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(8.0),
-                            ),
                             child: Container(
                               width: 120,
                               height: 40,
@@ -334,7 +329,7 @@ class Modal {
                             ),
                           ),
                           SizedBox(height: 25),
-                          RaisedButton(
+                          ElevatedButton(
                             onPressed: () {
                               Navigator.pushReplacement(
                                 context,
@@ -342,11 +337,6 @@ class Modal {
                               );
                               // Navigator.pop(context);
                             },
-                            textColor: Colors.white,
-                            padding: const EdgeInsets.all(0.0),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(8.0),
-                            ),
                             child: Container(
                               width: MediaQuery.of(context).size.width / 1.2,
                               height: 60,

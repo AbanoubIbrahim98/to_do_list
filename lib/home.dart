@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutter_slidable/flutter_slidable.dart';
 
 import 'package:flutter_todolist/appBars.dart';
@@ -49,7 +48,7 @@ class _HomeState extends State<Home> {
                   Container(
                     width: 180,
                     child: Text(
-                      'Go jogging with Christin',
+                      'Go jogging with ',
                       style: TextStyle(
                           color: CustomColors.TextGrey,
                           //fontWeight: FontWeight.w600,
